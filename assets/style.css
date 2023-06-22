@@ -2,6 +2,7 @@
     --couleur-1:#1b5485;
     --couleur-2:#e7a03c;
     --couleur-3:white;
+    --couleur-4:#eaeaea;
 }
 *{
     margin: 0;
@@ -64,31 +65,63 @@
 /*Contenue acceuil */
 .baniere{
     width: 100%;
-    height: 100hv;
-    background-color: var(--couleur-2);
-    /* background-image:linear-gradient(rgb(0,0,0,0,0.75),rgb(0,0,0,0,0.75)),url(images/bg_acceuil.png) ;
+    height: 80vh;
+     background-color: var(--couleur-4); 
+    /*background-image:linear-gradient(rgb(0,0,0,0,0.75),rgb(0,0,0,0,0.75)),url(images/bg_acceuil.png) ;
     background-size: cover;
-    background-position:center ; */
-}
-.infos{
-    width: 100%;
+    background-position:center ;*/
+    margin: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    z-index: -1;
+     
+ }
+.baniere div{
+    height: 60%;
+    width: 40%;
     position: absolute;
-    top: 50%;
+    top: 70px;
+
+
+    /* background-color: #1b5485; */
+    /* display: inline-block; */
+    position: relative;
+    /* left: 50%; */
+    /* background-color: #1b5485; */
+}
+.baniere div img{
+    width: 100%;
+    height: 100%;
+    
+
+} 
+.infos{
+    position: absolute;
     /* transform: translateX(-50%); */
     display: block;
     justify-content: center;
     text-align: center;
     color: #fff;
+    
 }
 .infos h1{
-    font-size: 30px;
+    font-size:40px;
+    font-weight: bolder;
     color: var(--couleur-1);
 
 }
-button{
+.infos p{
+    font-size:20px;
+    text-align: justify;
+    color: var(--couleur-1);
+}
+.btn{
     width: 200px;
     padding: 15px 0;
-    margin: 20px 10px;
+    margin: 10px 5px;
     text-align: center;
     border-radius: 25px;
     border: 2px solid var(--couleur-1);
@@ -98,13 +131,13 @@ button{
     position: relative;
     overflow: hidden;
     outline: none;
-
-
+    display: inline-block;
 }
-span{
+.spn{
     background: var(--couleur-1);
     height: 100%;
     width: 0;
+    text-align: center;
     border-radius: 25px;
     position: absolute;
     left: 0;
@@ -114,6 +147,41 @@ span{
     color: var(--couleur-3);
 
 }
-button:hover span{
+.btn:hover .spn{
     width: 100%;
+}
+.container{
+    width: 100%;
+   
+    padding: 5rem;
+}
+.container h1{
+    display: flex;
+    color: var(--couleur-1);
+    align-items: center;
+    justify-content: center;
+}
+.container h1 span{
+    color: var(--couleur-2);
+}
+.container h1::after{
+    content: '';
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--couleur-2);
+    margin-top: 50px;
+    
+
+}
+.paragraphe{
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    margin-top:20px ;
+}
+.spi{
+    color: var(--couleur-2);
+    margin-left: 10px;
 }

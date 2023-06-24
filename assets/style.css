@@ -3,11 +3,12 @@
     --couleur-2:#e7a03c;
     --couleur-3:white;
     --couleur-4:#eaeaea;
+    --mes-font: sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
-    font-family:  sans-serif;
+    font-family: var(--mes-font);
 }
 
 .menu{
@@ -24,8 +25,8 @@
     z-index: 1;
 }
 .logo{
-    /* width: 150px;
-    height: 150px; */
+    /* width: 150px; */
+    height: 170px; 
     cursor: pointer;
     margin-left: 2%;
 }
@@ -65,7 +66,7 @@
 /*Contenue acceuil */
 .baniere{
     width: 100%;
-    height: 80vh;
+    
      background-color: var(--couleur-4); 
     /*background-image:linear-gradient(rgb(0,0,0,0,0.75),rgb(0,0,0,0,0.75)),url(images/bg_acceuil.png) ;
     background-size: cover;
@@ -75,7 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 8rem;
     z-index: -1;
      
  }
@@ -83,7 +84,7 @@
     height: 60%;
     width: 40%;
     position: absolute;
-    top: 70px;
+    
 
 
     /* background-color: #1b5485; */
@@ -108,14 +109,15 @@
     
 }
 .infos h1{
-    font-size:40px;
+    font-size:35px;
     font-weight: bolder;
     color: var(--couleur-1);
+    text-align: start;
 
 }
 .infos p{
     font-size:20px;
-    text-align: justify;
+    text-align: start;
     color: var(--couleur-1);
 }
 .btn{
@@ -152,8 +154,7 @@
 }
 .container{
     width: 100%;
-   
-    padding: 4rem;
+    padding: 8rem;
 }
 .container h1{
     display: flex;
@@ -170,6 +171,8 @@
     align-items: center;
     justify-content: center;
     background-color: var(--couleur-2);
+    height: 3px ;
+    background-color: var(--couleur-2);
     margin-top: 50px;
     
 
@@ -177,8 +180,7 @@
 .paragraphe{
     font-size: 18px;
     text-align: center;
-    width: 80%;
-    margin-top:20px ;
+    width: 100%;
 }
 .spi{
     color: var(--couleur-2);
@@ -202,6 +204,57 @@ div .paramarche p{
     position: relative;
     
 }
-svg{
-    fill: var(--couleur-2);
+/* Section nos clients Témoignent */
+
+.parent__temoignage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+div.temoignage__user{
+    width: 20%;
+    padding: 4rem;
+    
+}
+.cont__user{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cont__user div.ima {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--couleur-3);
+
+}
+.cont__user div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit:cover;
+
+}
+div span.nom{
+    font-weight: 700;
+    color:var(--couleur-1);
+    font-weight: bold;
+}
+div span.profession{
+    background-color: var(--couleur-2);
+    text-align: left;
+    font: normal normal bold 13px/16px Montserrat;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+    background: #e7a03c 0 0 no-repeat padding-box;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+}
+div.para__user{
+    padding: 1rem 1rem;
+    margin: auto;
 }

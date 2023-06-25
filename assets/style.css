@@ -22,19 +22,21 @@
     justify-content: space-between;
     background-color: #fff;
     box-shadow: 5px 0px 10px rgb(196,196,196);
+    opacity: 0.9;
     z-index: 1;
 }
 .logo{
     /* width: 150px; */
     height: 170px; 
     cursor: pointer;
-    margin-left: 2%;
+    margin-left: 15%;
 }
 .menu ul li{
    list-style-type: none;
    display: inline-block; 
    margin: 0 20px;
    position: relative;
+   margin-right: 5px;
    
 }
 .menu ul li a{
@@ -76,7 +78,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 8rem;
+    padding: 4rem;
     z-index: -1;
      
  }
@@ -152,9 +154,10 @@
 .btn:hover .spn{
     width: 100%;
 }
+/* section La solution d’expédition revolutionnaire */
 .container{
     width: 100%;
-    padding: 8rem;
+    padding: 4rem;
 }
 .container h1{
     display: flex;
@@ -178,9 +181,9 @@
 
 }
 .paragraphe{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    width: 100%;
+    padding: 0 8rem;
 }
 .spi{
     color: var(--couleur-2);
@@ -192,16 +195,21 @@ div .paramarche{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    padding: 1rem;
     position: relative;
     
 }
+div .paramarche div{
+    width: 30%;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
 div .paramarche p{
-    width: 20%;
-    margin-left: 5%;
+    
+    /* margin-left: 5%; */
     text-align: justify;
     font-size: medium;
     position: relative;
+    
     
 }
 /* Section nos clients Témoignent */
@@ -211,7 +219,7 @@ div .paramarche p{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 40px;
+    padding: 1rem 4rem;
 }
 div.temoignage__user{
     width: 20%;
@@ -257,4 +265,67 @@ div span.profession{
 div.para__user{
     padding: 1rem 1rem;
     margin: auto;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: #1b5485;
+}
+footer div.container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+footer div.container div{
+    width: 23%;
+    color: var(--couleur-4);
+    
+}
+div span .titre{
+    color: var(--couleur-2);
+    font-weight: 200;
+    border-bottom:2px solid var(--couleur-4) ;
+}
+.lo{
+    vertical-align: middle;
+     /* width: 150px; */
+     height: 170px; 
+     cursor: pointer;
+     margin-bottom: 5px;
+}
+.foot li{
+    list-style-type: none;
+   
+    
+}
+.foot li a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--couleur-4);
+    font-size: 20px;
+
+}
+.foot li::before{
+    content: gg;
+    margin-left: 0px;
+}
+div a span img{
+    height:30px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+footer div.cont__bass{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span.bass{
+    width: 80%;
+    border-top: 2px solid #e7a03c;
+    padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
